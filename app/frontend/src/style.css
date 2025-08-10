@@ -1,0 +1,143 @@
+/* Import modern font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+/* Reset & Base */
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  color: #2d3436;
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Headings */
+h1, h2 {
+  font-weight: 700;
+  color: #2d3436;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Links */
+a {
+  color: #0984e3;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #0652dd;
+}
+
+/* Form styling */
+form {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #dcdde1;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+  border-color: #0984e3;
+  box-shadow: 0 0 5px rgba(9,132,227,0.3);
+}
+
+button {
+  background: #0984e3;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #0652dd;
+  transform: translateY(-2px);
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  margin-top: 25px;
+}
+
+th, td {
+  padding: 14px;
+  text-align: left;
+}
+
+th {
+  background-color: #0984e3;
+  color: white;
+  font-weight: 600;
+}
+
+tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+tr:hover {
+  background-color: #e8f0fe;
+  transition: background 0.3s ease;
+}
+
+/* Home page links */
+.home-links {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.home-links a {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 12px 20px;
+  background: #0984e3;
+  color: white;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.home-links a:hover {
+  background: #0652dd;
+  transform: translateY(-2px);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
