@@ -1,6 +1,6 @@
 🏢 Intern Portal
 
-An all-in-one Intern Management System with intern registration, admin login, task management, and progress tracking. This portal helps organizations streamline the internship process from onboarding to completion.
+An all-in-one Intern Management System with intern registration, admin login. This portal helps organizations streamline the internship process.
 
 🚀 Features
 🔹 Intern Side
