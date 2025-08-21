@@ -13,9 +13,10 @@ services:
       - key: MONGO_URI
         sync: false   # add in dashboard or via CLI (keeps it secret)
 
-  # Frontend Service
-  - type: static_site
+  # Frontend Service (Static React App)
+  - type: web
     name: intern-portal-frontend
+    env: static
     rootDir: frontend
     buildCommand: "npm install && npm run build"
     staticPublishPath: build
