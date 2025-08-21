@@ -1,31 +1,34 @@
 services:
-  # Backend
+  # Backend API
   - type: web
     name: intern-portal-backend
     env: node
-    rootDir: backend
+    plan: free
     buildCommand: "npm install"
     startCommand: "npm start"
-    plan: free
     envVars:
-      - key: MONGO_URI
-        sync: false   # set in dashboard
-      - key: SESSION_SECRET
-        sync: false   # set in dashboard
-      - key: NODE_ENV
-        value: production
+      - key: MONGODB_URI
+        sync: false  # You’ll set this manually in Render Dashboard
+      - key: JWT_SECRET
+        sync: false  # Example secret, also set manually
 
-  # Frontend
+  # Frontend React App
   - type: web
     name: intern-portal-frontend
-    env: static
-    rootDir: frontend
-    buildCommand: "npm install && npm run build"
-    staticPublishPath: "build"
+    env: node
     plan: free
+    buildCommand: "npm install && npm run build"
+    startCommand: "npm run start"
     envVars:
-      - key: REACT_APP_API_URL
+      # Host & port of backend from Render
+      - key: REACT_APP_API_HOST
         fromService:
           type: web
           name: intern-portal-backend
-          property: url
+          property: host
+
+      - key: REACT_APP_API_PORT
+        fromService:
+          type: web
+          name: intern-portal-backend
+          property: port
