@@ -1,0 +1,31 @@
+services:
+  # Backend
+  - type: web
+    name: intern-portal-backend
+    env: node
+    rootDir: backend
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    plan: free
+    envVars:
+      - key: MONGO_URI
+        sync: false   # set in dashboard
+      - key: SESSION_SECRET
+        sync: false   # set in dashboard
+      - key: NODE_ENV
+        value: production
+
+  # Frontend
+  - type: web
+    name: intern-portal-frontend
+    env: static
+    rootDir: frontend
+    buildCommand: "npm install && npm run build"
+    staticPublishPath: "build"
+    plan: free
+    envVars:
+      - key: REACT_APP_API_URL
+        fromService:
+          type: web
+          name: intern-portal-backend
+          property: url
