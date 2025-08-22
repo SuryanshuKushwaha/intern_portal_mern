@@ -5,7 +5,10 @@ const mongoose = require('mongoose');
 const applicantsRoutes = require('./routes/applicants');
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: ['http://localhost:3000', 'https://your-frontend-url.onrender.com']
+}));
+
 app.use(express.json());
 
 const PORT = process.env.PORT || 5000;
