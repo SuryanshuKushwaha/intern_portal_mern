@@ -2,10 +2,13 @@ const express = require('express');
 const router = express.Router();
 const Applicant = require('../models/Applicant');
 
+// POST applicant
 router.post('/', async (req, res) => {
   try {
     const { name, email, phone, role, skills } = req.body;
-    if(!name || !email || !phone || !role) return res.status(400).json({ error: 'Missing required fields' });
+    if (!name || !email || !phone || !role) {
+      return res.status(400).json({ error: 'Missing required fields' });
+    }
     const app = new Applicant({ name, email, phone, role, skills });
     await app.save();
     res.json({ message: 'Application submitted', applicant: app });
@@ -15,7 +18,8 @@ router.post('/', async (req, res) => {
   }
 });
 
-router.get('/api/applicants', async (req, res) => {
+// GET all applicants
+router.get('/', async (req, res) => {
   try {
     const apps = await Applicant.find().sort({ createdAt: -1 });
     res.json(apps);
@@ -25,6 +29,7 @@ router.get('/api/applicants', async (req, res) => {
   }
 });
 
+// DELETE applicant
 router.delete('/:id', async (req, res) => {
   try {
     const { id } = req.params;
