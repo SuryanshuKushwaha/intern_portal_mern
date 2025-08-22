@@ -15,7 +15,7 @@ router.post('/', async (req, res) => {
   }
 });
 
-router.get('/', async (req, res) => {
+router.get('/api/applicants', async (req, res) => {
   try {
     const apps = await Applicant.find().sort({ createdAt: -1 });
     res.json(apps);
