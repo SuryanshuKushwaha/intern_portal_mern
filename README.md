@@ -10,8 +10,6 @@ An all-in-one Intern Management System with intern registration, admin login. Th
 
 Registration with personal, educational, and internship preference details
 
-Internship application tracking (Pending / Shortlisted / Approved)
-
 Dashboard with:
 
 🔹 Admin Side
