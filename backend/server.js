@@ -6,7 +6,7 @@ const applicantsRoutes = require('./routes/applicants');
 
 const app = express();
 app.use(cors({
-  origin: ['http://localhost:3000', 'https://your-frontend-url.onrender.com']
+  origin: ['http://localhost:3000', 'https://intern-portal-mern.onrender.com']
 }));
 
 app.use(express.json());
