@@ -5,9 +5,7 @@ const mongoose = require('mongoose');
 const applicantsRoutes = require('./routes/applicants');
 
 const app = express();
-app.use(cors({
-  origin: ['http://localhost:3000', 'https://intern-portal-mern.onrender.com']
-}));
+app.use(cors());
 
 app.use(express.json());
 
