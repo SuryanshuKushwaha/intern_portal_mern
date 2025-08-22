@@ -43,19 +43,24 @@ Intern-Portal/
 git clone https://github.com/your-username/intern-portal.git
 cd intern-portal
 
-2️⃣ Install dependencies
+2️⃣ Install dependencies in both folders [frontend and backend] integrated terminals 
 npm install   # For Node.js
 
 3️⃣ Setup environment variables
 
-Create a .env file in the root folder:
+Create a .env file in the backend folder:
 
 PORT=5000
 DB_URL=your_database_url
 
+Create a .env file in the frontend folder:
+
+REACT_APP_API_URL=http://localhost:5000/api
+
 4️⃣ Run the app
-npm start
 
-
+npm run dev [in backend terminal]
+npm start [in frontend terminal]
+  
 App will run on http://localhost:5000
  🎉
