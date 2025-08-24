@@ -1,5 +1,7 @@
 Deployed project link :- https://intern-portal-mern.onrender.com
 
+Admin password : admin123
+
 🏢 Intern Portal
 
 An all-in-one Intern Management System with intern registration, admin login. This portal helps organizations streamline the internship process.
