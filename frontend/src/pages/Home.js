@@ -9,24 +9,50 @@ export default function Home() {
         Welcome — register as an intern or volunteer, or view applicants (admin).
       </p>
       <div className="home-links" style={{ display: 'flex', justifyContent: 'center', gap: '48px' }}>
-        <div style={{ textAlign: 'center', lineHeight: 0 }}>
+        <div style={{ textAlign: 'center', lineHeight: 0, width: 220 }}>
           <img
             src="/images/r.jpg"
             alt="Register"
-            style={{ borderRadius: "10px",display: 'block', margin: '0 auto', width: 160, height: 'auto', marginBottom: 0 }}
+            style={{ borderRadius: '10px', display: 'block', margin: '0 auto', width: '100%', height: 'auto', marginBottom: 0 }}
           />
-          <Link to="/register" style={{ display: 'block', marginTop: 0 }}>
+          <Link
+            to="/register"
+            style={{
+              display: 'block',
+              marginTop: 8,
+              width: '100%',
+              padding: '10px 12px',
+              background: '#0d6efd',
+              color: '#fff',
+              textDecoration: 'none',
+              borderRadius: 8,
+              textAlign: 'center',
+            }}
+          >
             Register
           </Link>
         </div>
 
-        <div style={{ textAlign: 'center', lineHeight: 0 }}>
+        <div style={{ textAlign: 'center', lineHeight: 0, width: 220 }}>
           <img
             src="/images/a.jpg"
             alt="Admin"
-            style={{ display: 'block', margin: '0 auto', width: 160, height: 'auto', marginBottom: 0 }}
+            style={{ borderRadius: '10px', display: 'block', margin: '0 auto', width: '100%', height: 'auto', marginBottom: 0 }}
           />
-          <Link to="/admin" style={{ display: 'block', marginTop: 0 }}>
+          <Link
+            to="/admin"
+            style={{
+              display: 'block',
+              marginTop: 8,
+              width: '100%',
+              padding: '10px 12px',
+              background: '#198754',
+              color: '#fff',
+              textDecoration: 'none',
+              borderRadius: 8,
+              textAlign: 'center',
+            }}
+          >
             Admin View
           </Link>
         </div>
