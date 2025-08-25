@@ -21,7 +21,7 @@ export default function Home() {
             style={{
               display: 'block',
               marginTop: 8,
-              width: '100%',
+               height:'35px',
               boxSizing: 'border-box',
               padding: '10px 0',
               background: '#0d6efd',
@@ -39,14 +39,14 @@ export default function Home() {
           <img
             src="/images/a.jpg"
             alt="Admin"
-            style={{ borderRadius: '10px', display: 'block', margin: '0 auto', width: '100%', height: '25px', marginBottom: 0 }}
+            style={{ borderRadius: '10px', display: 'block', margin: '0 auto', width: '100%', height: 'auto', marginBottom: 0 }}
           />
           <Link
             to="/admin"
             style={{
               display: 'block',
               marginTop: 8,
-              width: '100%',
+              height:'35px',
               boxSizing: 'border-box',
               padding: '10px 0',
               background: '#198754',
