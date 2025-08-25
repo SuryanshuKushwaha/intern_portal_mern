@@ -11,7 +11,7 @@ export default function Home() {
       <div className="home-links" style={{ display: 'flex', justifyContent: 'center', gap: '48px' }}>
         <div style={{ textAlign: 'center', lineHeight: 0 }}>
           <img
-            src="/images/register.svg"
+            src="/images/r.jpg"
             alt="Register"
             style={{ display: 'block', margin: '0 auto', width: 160, height: 'auto', marginBottom: 0 }}
           />
@@ -22,7 +22,7 @@ export default function Home() {
 
         <div style={{ textAlign: 'center', lineHeight: 0 }}>
           <img
-            src="/images/admin.svg"
+            src="/images/a.jpg"
             alt="Admin"
             style={{ display: 'block', margin: '0 auto', width: 160, height: 'auto', marginBottom: 0 }}
           />
