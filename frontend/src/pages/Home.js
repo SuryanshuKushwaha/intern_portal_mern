@@ -8,7 +8,7 @@ export default function Home() {
       <p style={{ fontSize: '30px', marginTop: '10px', marginBottom: '30px' }}>
         Welcome !
       </p>
-      <p style={{ fontSize: '30px', marginTop: '10px', marginBottom: '30px' }}>Register as an intern or volunteer, or view applicants (admin).</p>
+      <p style={{ fontSize: '18px', marginTop: '10px', marginBottom: '30px' }}>Register as an intern or volunteer, or view applicants (admin).</p>
       <div className="home-links" style={{ display: 'flex', justifyContent: 'center', gap: '48px' }}>
   <div style={{ textAlign: 'center', lineHeight: 0, width: 220, boxSizing: 'border-box' }}>
           <img
