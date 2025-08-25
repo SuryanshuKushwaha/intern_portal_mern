@@ -39,7 +39,7 @@ export default function Home() {
           <img
             src="/images/a.jpg"
             alt="Admin"
-            style={{ borderRadius: '10px', display: 'block', margin: '0 auto', width: '100%', height: 'auto', marginBottom: 0 }}
+            style={{ borderRadius: '10px', display: 'block', margin: '0 auto', width: '100%', height: '25px', marginBottom: 0 }}
           />
           <Link
             to="/admin"
