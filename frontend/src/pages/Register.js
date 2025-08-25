@@ -22,7 +22,7 @@ export default function Register(){
   return (
     <div className="container">
     <div style={{ padding:20 }}>
-      <h2>Register</h2>
+      <h2>Details Form</h2>
       <form onSubmit={submit}>
         <div><input name="name" placeholder="Name" value={form.name} onChange={handle} required /></div>
         <div><input name="email" placeholder="Email" value={form.email} onChange={handle} required /></div>

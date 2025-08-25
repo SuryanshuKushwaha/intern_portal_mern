@@ -8,9 +8,9 @@ export default function Home() {
       <p style={{ fontSize: '30px', marginTop: '10px', marginBottom: '30px' }}>
         Welcome !
       </p>
-      <p style={{ fontSize: '18px', marginTop: '10px', marginBottom: '30px' }}>Register as an intern or volunteer, or view applicants (admin).</p>
+      <p style={{ fontSize: '18px', marginTop: '10px', marginBottom: '30px' }}>Apply as an intern or volunteer</p>
       <div className="home-links" style={{ display: 'flex', justifyContent: 'center', gap: '48px' }}>
-  <div style={{ textAlign: 'center', lineHeight: 0, width: 220, boxSizing: 'border-box' }}>
+        <div style={{ textAlign: 'center', lineHeight: 0, width: 220, boxSizing: 'border-box' }}>
           <img
             src="/images/r.jpg"
             alt="Register"
@@ -21,7 +21,7 @@ export default function Home() {
             style={{
               display: 'block',
               marginTop: 8,
-               height:'35px',
+              height: '35px',
               boxSizing: 'border-box',
               padding: '10px 0',
               background: '#0d6efd',
@@ -31,11 +31,11 @@ export default function Home() {
               textAlign: 'center',
             }}
           >
-            Register
+            Apply
           </Link>
         </div>
 
-  <div style={{ textAlign: 'center', lineHeight: 0, width: 220, boxSizing: 'border-box' }}>
+        <div style={{ textAlign: 'center', lineHeight: 0, width: 220, boxSizing: 'border-box' }}>
           <img
             src="/images/a.jpg"
             alt="Admin"
@@ -46,7 +46,7 @@ export default function Home() {
             style={{
               display: 'block',
               marginTop: 8,
-              height:'35px',
+              height: '35px',
               boxSizing: 'border-box',
               padding: '10px 0',
               background: '#198754',
@@ -56,7 +56,7 @@ export default function Home() {
               textAlign: 'center',
             }}
           >
-            Admin View
+            Admin Login
           </Link>
         </div>
       </div>
