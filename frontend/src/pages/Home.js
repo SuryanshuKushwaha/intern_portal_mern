@@ -13,7 +13,7 @@ export default function Home() {
           <img
             src="/images/r.jpg"
             alt="Register"
-            style={{ display: 'block', margin: '0 auto', width: 160, height: 'auto', marginBottom: 0 }}
+            style={{ borderRadius: "10px",display: 'block', margin: '0 auto', width: 160, height: 'auto', marginBottom: 0 }}
           />
           <Link to="/register" style={{ display: 'block', marginTop: 0 }}>
             Register
