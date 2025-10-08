@@ -29,7 +29,8 @@ export default function Admin(){
     <div style={{ padding:20 }}>
       <h2>Admin Login</h2>
       <form onSubmit={tryLogin}>
-        <input placeholder="Enter Password = admin123" type="password" value={pass} onChange={e=>setPass(e.target.value)} />
+      <label> Enter Password </label>
+        <input placeholder="Write:admin123" type="password" value={pass} onChange={e=>setPass(e.target.value)} />
         <button>Login</button>
       </form>
     </div>
