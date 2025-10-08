@@ -29,7 +29,7 @@ export default function Admin(){
     <div style={{ padding:20 }}>
       <h2>Admin Login</h2>
       <form onSubmit={tryLogin}>
-        <input placeholder="Password" type="password" value={pass} onChange={e=>setPass(e.target.value)} />
+        <input placeholder="Enter Password = admin123" type="password" value={pass} onChange={e=>setPass(e.target.value)} />
         <button>Login</button>
       </form>
     </div>
